@@ -28,3 +28,26 @@ git commit -a -m "Change Emp.java File"
 比较文件 git diff
 
 git diff Hello.java
+
+远程连接
+
+git remote add origin git@github.com:mlaoliu/hr.git
+
+推送
+git push -u origin  master
+git push -u origin master
+
+进行提交
+
+git commit -a -m "In Hello.java File Add Two Statement"
+
+查询文件提交时详细时间
+
+git log Hello.java
+
+
+SSH Key 生成密钥
+
+ssh-keygen -t rsa -C "mlaoliu@126.com"
+
+
