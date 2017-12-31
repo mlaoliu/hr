@@ -53,6 +53,86 @@ ssh-keygen -t rsa -C "mlaoliu@126.com"
 
 git commit -a -m "Add Emp.java and Change git.txt"
 
+克隆crm仓库信息
 
-///
+git clone
 
+
+
+
+git log --pretty=oneline
+
+36aaadcb0c55827e154e212a0b59c22273afb7a4 (HEAD -> master, origin/master) add two file
+278008aa469471fac6738c7f5766aa362c822aae NEW File 2.xls
+fcd69e63e9d8c00b8c9ba1d3cad7a46638c44165 Add Emp.java and Change git.txt
+67faa99711499a284c2502da2335420ffe62b2f8 Add Emp.java and Change git.txt
+1de1ae46a1f134e7a4d81946e12d7559e69626ec Change Emp.java File
+0b2565cadad576bb43f862b9aca00656c5d1170f Change git.txt File
+6d5406188b877e95eb8a32b772d5b1b6e5002e4f In Hello.java File Add Two Statement
+7eb9e94ac93f9eedd6ea5c5d6f82439fbec88206 Change Hello.java File
+2eff4aef69568160986abf0e090af318356703e7 add Two Files
+4fd25df885c7e216306166eb00ae6208ec67d056 NEW File Hello.java
+
+
+
+E:\gitpro>git log --pretty=oneline --abbrev-commit
+36aaadc (HEAD -> master, origin/master) add two file
+278008a NEW File 2.xls
+fcd69e6 Add Emp.java and Change git.txt
+67faa99 Add Emp.java and Change git.txt
+1de1ae4 Change Emp.java File
+0b2565c Change git.txt File
+6d54061 In Hello.java File Add Two Statement
+7eb9e94 Change Hello.java File
+2eff4ae add Two Files
+4fd25df NEW File Hello.java
+
+
+git tag v0.1 fcd69e6
+
+git tag v0.2 6d54061
+
+git tag v.3 2eff4ae
+
+
+git tag v0.4 -m "Init Project"
+
+
+git  push origin v0.4
+
+批量上传
+ git push origin --tags
+
+本地删除 v0.1标签
+
+远程删除 v0.1标签
+
+git  push origin  : refs/tags/v0.1
+
+CopSSH
+$ ssh-keygen -t rsa -C "mlaoliu@126.com"
+
+
+SvcCOPSSH
+
+mldn.cn
+
+authorized_keys
+
+	|-：ssh coder_my@192.168.100.6
+		www.mldn.cn
+
+C:\Program Files\Git\bin
+
+
+export PATH="/bin:$syspath:$winpath :/cygdrive/C/Program Files/Git/bin:/cygdrive/C/Program Files/Git/mingw64/libexec/git-core"
+E:\Program Files (x86)\ICW\home\coder_my\
+E:\Program Files (x86)\ICW\etc
+C:\Program Files\Git\mingw64\libexec\git-core
+
+mldn.git(mkdir mldn.git) == git init --bare
+git clone coder_my@192.168.100.6:mldn.git
+
+git commit -m "Hello.java"
+
+git push origin master
