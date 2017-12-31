@@ -51,3 +51,8 @@ SSH Key 生成密钥
 ssh-keygen -t rsa -C "mlaoliu@126.com"
 
 
+git commit -a -m "Add Emp.java and Change git.txt"
+
+
+///
+
