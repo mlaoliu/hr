@@ -1,0 +1,15 @@
+﻿git config --global user.nale 'mldn'
+
+git config --global user.email 'mlaoliu@126.com'
+
+md e:\gitpro
+
+git init
+
+git init --bare
+
+git status
+
+git add 文件名称
+
+git commit -m "NEW File Hello.java"
