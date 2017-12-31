@@ -13,3 +13,14 @@ git status
 git add 文件名称
 
 git commit -m "NEW File Hello.java"
+
+//批量添加文件到版本库中
+git add .
+
+进行版本库的提交
+
+git commit -m "add Two Files"
+
+直接将修改后的文件增加到版本库中
+
+git commit -a -m "Change Emp.java File"
