@@ -31,7 +31,7 @@ git diff Hello.java
 
 远程连接
 
-git remote add origin git@github.com:mlaoliu/hr.git
+git remote add origin git@github.com:mlaoliu/erp.git
 
 推送
 git push -u origin  master
